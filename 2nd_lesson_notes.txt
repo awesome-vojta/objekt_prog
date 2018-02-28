@@ -1,0 +1,47 @@
+public class Auto{
+  String barva;
+  public void startuj{
+    System.Out.Print("vroom!")
+  }
+}
+
+public class obdelnik{
+// Konstruktor je "metoda" ktera nic nevraci, vytvari objekt
+  Obdelnik(int s, int v){
+    sirka=s;
+    vyska=v;
+  }
+
+  Obdelnik(int s, int v){
+    this(s,v,Color.BLACK); // nastaveni "default hodnoty"
+  }  
+
+  Color barva;
+  int sirka, vyska;
+  Point Pozice;
+
+  int vypoctiObvod(){
+    return (sirka=vyska);
+  }
+
+  int vypoctiObsah(){
+
+  }
+}
+
+// Equals porovna objekty  >> Obdelnik(2,3).equals(Obdelnik(2,3)) vrati true
+// == by vratilo false, reference se neshoduji
+public class Bod{
+  int x,y;
+  static int pocetBodu; // tato promena je pro vsechny instace stejna
+  public Bod(double x, double y){
+    this.x=x; this.y=y;  // hodi vstupni hodnoty do x a y
+  }
+}
+
+//trida Math ma konstruktor definovanej jako private, 
+//protoze nevytvarime objekt! zajimaji nas pouze jeji metody
+//
+// trida bez main metody je KNIHOVNA
+// instancni metoda operuje s objekty
+// staticka metoda operuje s tridama
